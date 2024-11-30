@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  background-color: rgb(209, 241, 241);
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.photo {
+  position: relative;
+}
+.photo p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.photo img {
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  border: white;
+  background-color: white;
+  margin-left: 20px;
+  border-radius: 20px;
+  padding: 30px;
+}
+.login-heading {
+  font-size: x-large;
+  font-weight: bolder;
+}
+.form {
+  width: 100%;
+  margin-top: 20px;
+}
+.form input,
+.form button {
+  height: 40px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border: none;
+  background-color: rgb(237, 235, 235);
+  border-radius: 5px;
+}
+
+.form button {
+  border-radius: 10px;
+  background-color: rgb(5, 187, 187);
+  color: white;
+}
+.form button:hover {
+  cursor: pointer;
+  background-color: rgb(30, 178, 178);
+}
+
+.forget {
+  color: grey;
+  font-size: small;
+  border: none;
+}
+.forget:hover {
+  cursor: pointer;
+  color: rgb(92, 90, 90);
+}
+
+.google {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+}
+.google:hover {
+  cursor: pointer;
+}
+
+.google img {
+  width: 20px;
+  height: 20px;
+}
+.google div {
+  margin-top: 5px;
+  margin-left: 5px;
+  color: grey;
+  font-size: smaller;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .photo {
+    width: 100%;
+    position: relative;
+  }
+  .photo img {
+    padding: 30px;
+    border-radius: 20px;
+  }
+  .photo p {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+  }
+}
